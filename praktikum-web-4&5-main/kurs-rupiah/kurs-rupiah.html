@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Konversi Uang</title>
+	<style>
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			text-align: center;
+			width: 30%;
+		}
+	</style>
+</head>
+
+<body>
+	<fieldset>
+		<legend>Kurs Rupiah - Mata Uang Asing</legend>
+		<script>
+			function itungDuit() {
+				var duit = document.getElementById("inputNilai").value;
+				var valas = document.getElementById("valas").value;
+				document.getElementById("hasilNilai").value = duit * valas;
+			}
+		</script>
+
+		<table>
+			<tr>
+				<th>Masukkan Nilai</th>
+				<th>Valas</th>
+				<th>Nilai Rupiah</th>
+			</tr>
+			<tr>
+				<td><input type="number" id="inputNilai" name="inputNilai" onInput="itungDuit()"><br></td>
+				<td>
+					<select name="valas" id="valas" onChange="itungDuit()">
+						<option value="9915">Dollar US</option>
+						<option value="13472">Dollar Singapore</option>
+						<option value="874">Ringgit Malaysia</option>
+						<option value="120">Yen Jepang</option>
+						<option value="15888">Euro</option>
+						<option value="3592">Riyal Arab Saudi</option>
+					</select>
+				</td>
+				<td><input type="number" id="hasilNilai" name="hasilNilai"><br></td>
+			</tr>
+		</table>
+	</fieldset>
+</body>
+
+</html>

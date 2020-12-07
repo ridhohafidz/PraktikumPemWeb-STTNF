@@ -1,0 +1,20 @@
+/* Style landing page css */
+
+header {
+    background-color: #DC143C;
+}
+
+.h3 {
+    color: #F8F8FF;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.p2 {
+    font-size: 13px;
+    font-style: italic;
+}

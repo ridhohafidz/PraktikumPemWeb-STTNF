@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Registrasi</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Form Registrasi</legend>
+        <table align="center">
+			<tbody><tr class="heading">
+				<td><center><h2><font face="Tahoma">Formulir Registrasi</font></h2></center></td>
+			</tr>
+		<tr>
+			<td>
+			<div class="kiri">	
+				<form>
+				<table>        
+					<tr>
+						<td>Nama Lengkap</td>
+						<td>:</td>
+						<td><input type="text" name="nama"></td>
+					</tr>
+					<tr>
+						<td>Tempat Lahir</td>
+						<td>:</td>
+						<td><input type="text" name="tempat_lahir"></td>
+					</tr>
+
+                    <tr>
+						<td>Tanggal Lahir</td>
+						<td>:</td>
+						<td><input type="date" name="tanggal_lahir"></td>
+                    </tr>
+                    <tr>
+						<td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                        <input type="radio" name="Jenis Kelamin" value="laki" /> Laki-laki
+                        <input type="radio" name="Jenis Kelamin" value="perempuan" /> Perempuan
+                        </td>
+					</tr>
+					<tr>
+						<td>Agama</td>
+							<td>:</td>
+							<td><select>
+							<option value="Agama">--Pilih--</option>
+							<option value="Agama">Islam</option>
+                            <option value="Agama">Protestan</option>
+                            <option value="Agama">Katolik</option>
+							<option value="Agama">Hindu</option>
+							<option value="Agama">Budha</option>
+                            <option value="Agama">Konghucu</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td>Nomor telepon</td>
+						<td>:</td>
+						<td><input type="text" name="Nomor telepone" placeholder="(+62) xxxxxxxxxx"></td>
+					</tr>
+					<tr>
+						<td>E-mail</td>
+						<td>:</td>
+						<td><input type="E-mail" name="E-mail" placeholder="user@example.com"></td>
+					</tr>
+                    <tr>
+                        <td>Foto</td>
+                        <td>:</td>
+                        <td>
+                            <label for="Foto" id="Foto"></label>
+                            <input type="file" required >
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>Alamat</td>
+                        <td>:</td>
+                        <td><textarea name="alamat" rows="4" cols="30"></textarea></td>
+                    </tr>
+				</tbody></table>
+				</form>
+        </div></td></tr>
+        <tr>
+			<td colspan="2">
+                <button type="submit" value="Submit">Submit</button>
+                <button type="reset" value="Reset">Reset</button>
+            </td>
+	    </tr>
+        </tbody></table>        
+        </fieldset>
+    </body>
+</html>

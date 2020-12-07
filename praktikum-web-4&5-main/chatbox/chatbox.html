@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chatbox</title>
+	<style>
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			text-align: left;
+			width: 30%;
+			bottom: 1%;
+			right: 1%;
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+		function tambahChat() {
+			//ambil text di element hasilChat, hasilChat fungsinya nampung semua text chat nya
+			var hasil = document.getElementById("hasilChat").innerHTML;
+			//ambil nilai input chat baru
+			var inputNilai = document.getElementById("inputChat").value;
+			//element hasilChat dikasi <br> untuk ngasi enter, trus ditambahin chat baru
+			document.getElementById("hasilChat").innerHTML = hasil + "<br>" + inputNilai;
+			//reset nilai input jadi kosong
+			document.getElementById("inputChat").value = "";
+		}
+	</script>
+
+	<table style="position: fixed">
+		<tr>
+			<td>
+				<div id="hasilChat" style="height:300px;overflow:auto;"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input style="width:80%" type="text" id="inputChat">
+				<button type="button" onclick="tambahChat()">Kirim</button>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image-Picker | Pilihan Sepeda Motor</title>
+    <style>
+        img {
+            width: 20%;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function pilih() {
+            let list_motor = document.getElementById("motor");
+            let idx = list_motor.selectedIndex;
+            if (list_motor.value == "beat") {
+                console.log("motor index ke- " + idx + " adalah " + list_motor[idx].value);
+                // ambil area obyej img id=gambar
+                let area_gambar = document.getElementById("gambar");
+                area_gambar.src = "gambar/" + list_motor[idx].value + ".jpg";
+                window.alert("Ini Adalah Gambar Beat")
+
+            } else if (list_motor.value == "fino") {
+                console.log("motor index ke- " + idx + " adalah " + list_motor[idx].value);
+                // ambil area obyej img id=gambar
+                let area_gambar = document.getElementById("gambar");
+                area_gambar.src = "gambar/" + list_motor[idx].value + ".jpg";
+                window.alert("Ini Adalah Gambar Fino")
+
+            } else if (list_motor.value == "jupiter") {
+                console.log("motor index ke- " + idx + " adalah " + list_motor[idx].value);
+                // ambil area obyej img id=gambar
+                let area_gambar = document.getElementById("gambar");
+                area_gambar.src = "gambar/" + list_motor[idx].value + ".jpg";
+                window.alert("Ini Adalah Gambar Jupiter")
+
+            } else if (list_motor.value == "r25") {
+                console.log("motor index ke- " + idx + " adalah " + list_motor[idx].value);
+                // ambil area obyej img id=gambar
+                let area_gambar = document.getElementById("gambar");
+                area_gambar.src = "gambar/" + list_motor[idx].value + ".jpg";
+                window.alert("Ini Adalah Gambar Yamaha R25")
+
+            } else if (list_motor.value == "rxking") {
+                console.log("motor index ke- " + idx + " adalah " + list_motor[idx].value);
+                // ambil area obyej img id=gambar
+                let area_gambar = document.getElementById("gambar");
+                area_gambar.src = "gambar/" + list_motor[idx].value + ".jpg";
+                window.alert("Ini Adalah Gambar Yamaha RX-KING")
+
+            } else if (list_motor.value == "supra-x") {
+                console.log("motor index ke- " + idx + " adalah " + list_motor[idx].value);
+                // ambil area obyej img id=gambar
+                let area_gambar = document.getElementById("gambar");
+                area_gambar.src = "gambar/" + list_motor[idx].value + ".jpg";
+                window.alert("Ini Adalah Gambar Supra-X")
+
+            } else if (list_motor.value == "yamaha-v-80") {
+                console.log("motor index ke- " + idx + " adalah " + list_motor[idx].value);
+                // ambil area obyej img id=gambar
+                let area_gambar = document.getElementById("gambar");
+                area_gambar.src = "gambar/" + list_motor[idx].value + ".jpg";
+                window.alert("Ini Adalah Gambar Yamaha-V 80")
+
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form id="frm1">
+        Pilih Sepeda Motor : <select id="motor" onchange="pilih()">
+            <option value="beat">Beat</option>
+            <option value="fino">Fino</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="r25">R25</option>
+            <option value="rxking">RX-KING</option>
+            <option value="supra-x">Supra-X</option>
+            <option value="yamaha-v-80">Yamaha 80</option>
+        </select>
+    </form>
+    <br />
+    <img src="gambar/beat.jpg" alt="Honda Beat" id="gambar" />
+</body>
+
+</html>
